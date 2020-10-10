@@ -1,1 +1,21 @@
-Hello World
+<html>
+<head>
+<title>andefors.com</title>
+<script>
+
+function buttonClick() {
+  console.log('You clicked the button!');
+  let yourName = window.prompt('What\'s your name?');
+  while (!yourName) {
+    yourName = window.prompt('Try again...\n\nWhat\'s your name?');
+  }
+  document.querySelector('#btn').innerHTML = `Hello ${yourName}!`;
+}
+
+</script>
+</head>
+<body>
+<button id='btn' onclick='buttonClick()'>Hello World</button>
+</body>
+</html>
+
